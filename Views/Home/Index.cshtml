@@ -1,0 +1,336 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>MrServices</title>
+</head>
+<body>
+    <div class="main" id="container">
+        <div class="nv-toggle">
+            <i class="fa fa-bars fa-2x" id="icn-nv"></i>
+            <i class="fa fa-times-circle fa-2x" id="icn-close"></i>
+        </div>
+        <div class="header">
+            <div class="header__left">
+                <h1>Mr. SERVICE</h1>
+            </div>
+            <div class="header__right">
+                <ul>
+                    <!-- <li>HOME &#9661;</li> -->
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#service">REPAIR AND SERVICE</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-delay="100" class="hero-container">
+            <div>
+                <span id="step1"></span>
+                <span id="step2"></span>
+                <span id="step3"></span>
+            </div>
+            <div class="hero-desc">
+                <h1 id="heroTitle">Washing Machine <br> Service</h1>
+                <p>Get the best services and repairs in town</p>
+                <a href="#book" class="btn-mrservice">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="service" id="service">
+        <h1>Our Works !</h1>
+        <h3>+<span>+</span>+</h3>
+        <div class="service-container">
+            <ul>
+                <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="icondiv one">
+                        <img src="~/images/washingmachineLogo.png" alt="Washing-machine">
+                    </div>
+                    <p class="servicetitle">
+                        Washing Machine
+                    </p>
+                    <p class="service-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus dicta accusantium deleniti, commodi eligendi. Eaque ducimus cupiditate necessitatibus vitae!
+                    </p>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="icondiv two">
+                        <img src="~/images/refrigeratorLogo.png" alt="Washing-machine">
+                    </div>
+                    <p class="servicetitle">
+                        Refrigerator
+                    </p>
+                    <p class="service-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus dicta accusantium deleniti, commodi eligendi. Eaque ducimus cupiditate necessitatibus vitae!
+                    </p>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="icondiv three">
+                        <img src="~/images/acLogo.jpg" alt="Washing-machine">
+                    </div>
+                    <p class="servicetitle">
+                        Air Conditioner
+                    </p>
+                    <p class="service-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus dicta accusantium deleniti, commodi eligendi. Eaque ducimus cupiditate necessitatibus vitae!
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container-about">
+            <div class="img-box">
+                <img src="~/images/woodman.jpg">
+            </div>
+            <div class="ab-desc">
+                <h1>Blaa blaablla</h1>
+                <p>
+                    Dolphins are regarded as the friendliest creatures in the sea and stories of them helping drowning sailors have been common since Roman times. The more we learn about dolphins, the more we realize that their society is more complex than people previously imagined. They look after other dolphins when they are ill, care for pregnant mothers and protect the weakest in the community, as we do. Some scientists have suggested that dolphins have a language but it is much more probable that they communicate with each other without needing words. Could any of these mammals be more intelligent than man? Certainly the most common argument in favor of man's superiority over them that we can kill them more easily than they can kill us is the least satisfactory. On the contrary, the more we discover about these remarkable creatures, the less we appear superior when we destroy them
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="map">
+        <div class="map-container" data-aos="fade-down" data-aos-duration="1000">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12494.648108938449!2d77.55724139981285!3d9.459269808048447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06e97940b04acb%3A0xa688991a7d14a24a!2sMr.Service%20(AC%20Repair%20%26%20Service%20in%20Tenkasi%2FWashing%20Machine%20Repair%20%26%20Service%20in%20Tenkasi%2FFridge%20Repair%20%26%20Service%20in%20Tenkasi)!5e0!3m2!1sen!2sin!4v1619020243829!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact_header" data-aos="fade-up">
+            <h1>Contact Us</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, totam.?</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact__Left" data-aos="zoom-in">
+                <div class="contact-innerBox">
+                    <div class="contact-icn">
+                        <a href="#map"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p class="contact-title">Address</p>
+                        <p class="contact-desc">45e, Innam chettikulam, Avarampatti, Rajapalayam.</p>
+                    </div>
+                </div>
+                <div class="contact-innerBox">
+                    <div class="contact-icn">
+                        <a href="tel:+919087290606"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p class="contact-title">Phone</p>
+                        <p class="contact-desc">908 729 0606</p>
+                    </div>
+                </div>
+                <div class="contact-innerBox">
+                    <div class="contact-icn">
+                        <a href="mailto: manikandan1292000@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p class="contact-title">Email</p>
+                        <p class="contact-desc">manikandan1292000@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__Right" id="book" data-aos="zoom-in">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input class="field" id="name" type="text" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input class="field" id="email" type="text" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea class="field" id="desc" name="" id="" required></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input class="btn-mrservice" type="submit" value="Send">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="foot-container">
+            <div class="firstarea">
+                <h1>Mr. SERVICE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi unde iste nesciunt iure culpa!</p>
+                <div class="social-icn">
+                    <img class="icn" src="~/images/facebook.png" alt="facebook">
+                    <img class="icn" src="~/images/instagram.png" alt="instagram">
+                    <img class="icn" src="~/images/tumblr.png" alt="tumblr">
+                    <img class="icn" src="~/images/twitter.png" alt="twitter">
+                </div>
+            </div>
+            <div class="secondarea">
+                <h1>Customer Service</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#service">Repair and Service</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="thirdarea">
+                <h1>Find Us Here</h1>
+                <div class="innerBox">
+                    <div class="contact-icn">
+                        <a href="#map"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <div class="contact-icn">
+                        <a href="tel:+919876543210"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p> 345-678-9012</p>
+                    </div>
+                </div>
+                <div class="innerBox">
+                    <div class="contact-icn">
+                        <a href="mailto:support@mrservicenow.in"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p>support@mrservicenow.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="copyrights">
+        <p>Developed by<span> PS-Team</span></p>
+    </section>
+
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    var icnNv = document.getElementById("icn-nv");
+    var icnClose = document.getElementById("icn-close");
+    var screenshowId;
+    var screenshowSec = 8000;
+
+    icnNv.onclick = function () {
+        icnNv.style.display = 'none';
+        icnClose.style.display = 'block';
+        $('.header').css('left', '0px');
+        $('.header').css('width', '100%');
+        $('.header').css('background-color', 'cadetblue');
+        $('.hero-container').css('z-index', '-1');
+    }
+
+    icnClose.onclick = function () {
+        icnNv.style.display = 'block';
+        icnClose.style.display = 'none';
+        $('.header').css('left', '-1000px');
+        $('.hero-container').css('z-index', '1');
+    }
+
+    screenshowId = setTimeout(AutoClick, screenshowSec);
+    var container = document.getElementById("container");
+    var step1 = document.getElementById("step1");
+    var step2 = document.getElementById("step2");
+    var step3 = document.getElementById("step3");
+    var heroTitle = document.getElementById("heroTitle");
+
+    $('#container').css('background-image', "url('images/woodman.jpg')");
+    container.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
+    step1.style.backgroundColor = "white";
+
+    $('#step1').click(function(){
+        $('#container').css('background-image', "url('images/woodman.jpg')");
+    });
+    $('#step2').click(function () {
+        $('#container').css('background-image', "url('images/fridge.jpg')");
+    });
+    $('#step3').click(function () {
+        $('#container').css('background-image', "url('images/meulen.jpg')");
+    });
+
+    step1.addEventListener("click", () => {
+        step1.style.backgroundColor = "white";
+        step2.style.backgroundColor = "transparent";
+        step3.style.backgroundColor = "transparent";
+        container.style.backgroundImage = 'inear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))';
+        heroTitle.innerHTML = "Washing Machine <br> Service";
+        clearInterval(screenshowId);
+        screenshowId = setTimeout(AutoClick, screenshowSec);
+    });
+    step2.addEventListener("click", () => {
+        step1.style.backgroundColor = "transparent";
+        step2.style.backgroundColor = "white";
+        step3.style.backgroundColor = "transparent";
+        container.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), @Url.Content("images/fridge.jpg")';
+        heroTitle.innerHTML = "Refrigerator  <br> Service";
+        clearInterval(screenshowId);
+        screenshowId = setTimeout(AutoClick, screenshowSec);
+    });
+    step3.addEventListener("click", () => {
+        step1.style.backgroundColor = "transparent";
+        step2.style.backgroundColor = "transparent";
+        step3.style.backgroundColor = "white";
+        container.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), @Url.Content("images/meulen.jpg")';
+        heroTitle.innerHTML = "Air Conditioner <br> Service";
+        clearInterval(screenshowId);
+        screenshowId = setTimeout(AutoClick, screenshowSec);
+    });
+
+    $("#name").blur(function () {
+        if ($("#name").val().length > 0) {
+        }
+    });
+
+    var i = 1;
+    function AutoClick() {
+        switch (i) {
+            case 1:
+                step1.click();
+                i++;
+                break;
+            case 2:
+                step2.click();
+                i++;
+                break;
+            case 3:
+                step3.click();
+                i++;
+                break;
+            default:
+                step1.click();
+                i = 2;
+                break;
+        }
+    }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
