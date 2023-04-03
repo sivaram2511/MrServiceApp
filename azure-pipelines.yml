@@ -4,11 +4,16 @@ trigger:
 pool: default
 
 steps:
-- task: NuGetCommand@2
+- task: DotNetCoreCLI@2
+  displayName: 'Restore dependencies'
   inputs:
     command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'select'
+    projects: 'MrService.csproj'
+    
+
 - task: DotNetCoreCLI@2
+  displayName: 'Build web project'
   inputs:
+    version: '3.1.0'
     command: 'build'
+    projects: 'MrService.csproj'
