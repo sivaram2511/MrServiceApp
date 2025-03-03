@@ -1,0 +1,18 @@
+trigger:
+- main
+
+pool: default
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '3.1'
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: 'MrService.csproj'
+    feedsToUse: 'select'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
